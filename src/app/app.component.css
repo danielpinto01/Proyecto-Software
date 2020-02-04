@@ -1,0 +1,291 @@
+html, body{
+	height:100%
+	margin 0;
+}
+
+/* PAGINA DE INICIO */
+
+/*icono principal */
+.icon {
+	top:615px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	width: 50%;
+}
+
+/* Texto de bienvenido */
+#bienvenido{    
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	font-size:50px;
+	font-family: Arial;
+	margin-top: 50px;
+	margin-block-end: 50px;
+}
+
+/* Boton de iniciar */
+#iniciar{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	background: #3189E3;
+	font-family: Arial;
+	color: #ffffff;
+	padding: 10px 50px;
+	border-radius: 5px;
+	border: thin solid #3189E3;
+}
+#iniciar:hover{
+  background:#2E6399;
+}
+
+/* Boton de pregunta */
+#question{
+	background-color: #ffffff;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	border: 0px;
+	border-radius: 20px;
+}
+#question:hover{
+	background:#DEDEDE;
+}
+
+/* PAGINA SECUNDARIA */
+
+/* Boton de retroceder */
+#backToHome{
+	background-color: #ffffff;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	border: 0px;
+	border-radius: 20px;
+}
+#backToHome:hover{
+	background:#DEDEDE;
+} 
+
+/* Icono secundario */
+.iconSecundary {
+	top:615px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	width: 50%;
+}
+
+/* Texto de bienvenido */
+#telecorp{    
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	font-size:50px;
+	font-family: Arial;
+	margin-top: 50px;
+	margin-block-end: 50px;
+}
+
+/* Boton de iniciar sesion */
+#iniciarSesion{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  background: #3189E3;
+  font-family: Arial;
+  color: #ffffff;
+  padding: 10px 50px;
+  border-radius: 5px;
+  border: thin solid #3189E3;
+}
+#iniciarSesion:hover{
+	background:#2E6399;
+}
+
+/* Parrafo */
+#text{    
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	font-size:15px;
+	font-family: Arial;
+	margin-top: 70px;
+	margin-block-end: 30px;
+	margin-left: 400px;
+	margin-right: 400px;
+}
+/* Boton de pregunta secundario */
+#questionSecundary{
+  background-color: #ffffff;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0px;
+  border-radius: 20px;
+}
+#questionSecundary:hover{
+  background:#DEDEDE;
+}
+
+/* PAGINA DE LOG IN USUARIO ADMINISTRADOR */
+
+/* Boton de retroceder a la secundaria*/
+#backToSecundary{
+	background-color: #ffffff;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	border: 0px;
+	border-radius: 20px;
+}
+#backToSecundary:hover{
+	background:#DEDEDE;
+} 
+
+/* Icono Log In Usuario Admin */
+.iconLogInUA {
+	top:615px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 70px;
+	width: 50%;
+}
+
+/* Texto de iniciar sesion */
+#iniciarSesionText{    
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	font-size:50px;
+	font-family: Arial;
+	margin-top: 80px;
+	margin-block-end: 50px;
+}
+
+/* Boton de usuario */
+#userButtonUA{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	background: #3189E3;
+	font-family: Arial;
+	color: #ffffff;
+	border-radius: 5px;
+	border: thin solid #3189E3;
+	margin-top: 100px;
+  }
+  #userButtonUA:hover{
+	  background:#2E6399;
+  }
+
+  /* Boton de administrador */
+#admiButtonUA{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	background: #3189E3;
+	font-family: Arial;
+	color: #ffffff;
+	border-radius: 5px;
+	border: thin solid #3189E3;
+	margin-top: 30px;
+  }
+  #admiButtonUA:hover{
+	  background:#2E6399;
+  }
+
+/* PAGINA DE INICIAR SESION USUARIO   */
+
+/* Boton de retroceder a la log in general*/
+#backToLogInUA{
+	background-color: #ffffff;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	border: 0px;
+	border-radius: 20px;
+}
+#backToLogInUA:hover{
+	background:#DEDEDE;
+} 
+
+/* Icono Log In Usuario  */
+.iconLogInUser {
+	top:615px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	width: 50%;
+}
+
+/* Texto de iniciar sesion usuario*/
+#iniciarSesionUser{    
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	font-size:50px;
+	font-family: Arial;
+	margin-top: 80px;
+	margin-block-end: 20px;
+}
+
+/* Texto de ingresar documento usuario*/
+#ingresarDocumentoUser{    
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	font-size:20px;
+	font-family: Arial;
+	margin-top: 20px;
+	margin-block-end: 50px;
+}
+
+/* div input documento user */
+#documentUserDiv{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Arial;
+}
+
+/* boton he olvidado mi documento */
+#forgetMyDocumentButton{
+	background-color: #ffffff;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	border: 0px;
+	border-radius: 5px;
+}
+#forgetMyDocumentButton:hover{
+	background:grey;
+}
+/* Boton de inicio sesion usuario */
+#logInUserbutton{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	background: #3189E3;
+	font-family: Arial;
+	color: #ffffff;
+	border-radius: 5px;
+	border: thin solid #3189E3;
+	margin-top: 30px;
+	margin-block-end: 50px; 
+  }
+  #logInUserbutton:hover{
+	background:blue;
+}
+
