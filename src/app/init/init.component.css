@@ -1,0 +1,52 @@
+/* PAGINA DE INICIO */
+
+/*icono principal */
+.icon {
+	top:615px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	width: 50%;
+}
+
+/* Texto de bienvenido */
+#bienvenido{    
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	font-size:50px;
+	font-family: Arial;
+	margin-top: 50px;
+	margin-block-end: 50px;
+}
+
+/* Boton de iniciar */
+#iniciar{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	background: #3189E3;
+	font-family: Arial;
+	color: #ffffff;
+	padding: 10px 50px;
+	border-radius: 5px;
+	border: thin solid #3189E3;
+}
+#iniciar:hover{
+  background:#2E6399;
+}
+
+/* Boton de pregunta */
+#question{
+	background-color: #ffffff;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	border: 0px;
+	border-radius: 20px;
+}
+#question:hover{
+	background:#DEDEDE;
+}
