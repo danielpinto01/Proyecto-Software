@@ -4,11 +4,18 @@ import { HomeAdministratorComponent } from './home-administrator/home-administra
 import { HomeClientComponent } from './home-client/home-client.component';
 import { AppComponent } from './app.component';
 import { InitComponent } from './init/init.component';
+import { InformationComponent } from './information/information.component';
 
 
 const routes: Routes = [
   {
-    path: "", component: InitComponent
+     path: "", redirectTo : "init", pathMatch: "full"
+  }
+  ,{
+    path: "init", component: InitComponent
+  },
+  {
+    path: "information", component: InformationComponent
   },
   {
     path: "home", component: HomeAdministratorComponent

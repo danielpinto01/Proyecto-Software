@@ -1,0 +1,24 @@
+<!-- PAGINA SECUNDARIA -->
+<div id="secundaryDiv" [hidden]=hideSecondaryWindow>
+    <!-- Boton de volver a la pantalla inicial -->
+    <button id="backToHome">
+      <img src="https://image.flaticon.com/icons/svg/1635/1635580.svg" class="btn btn-success" (click)="showStar()" style="width:30px; height:30px;">
+    </button>
+    <!-- Div con el icono secundario-->
+    <div id="iconSecundaryDiv">
+      <img src="https://image.flaticon.com/icons/svg/2485/2485910.svg" class="iconSecundary" style="width:100px; height:100px;">
+    </div>
+    <!-- Texto de bienvenido -->
+    <h1 id="telecorp">TELECORP</h1>
+    <!-- Boton de iniciar sesion -->
+    <button id="iniciarSesion" class="btn btn-success" (click)="hideSecondary()">Iniciar Sesión</button>
+    <!-- Parrafo de info -->
+    <p id="text">Un texto es una composición de signos codificados en un sistema de escritura que forma una 
+      unidad de sentido. También es una composición de caracteres imprimibles generados por un algoritmo de cifrado que,
+      aunque no tienen sentido para cualquier persona, sí puede ser descifrado por su destinatario original.
+    </p>
+    <!-- Boton de pregunta -->
+    <button id="questionSecundary">
+      <img src="https://image.flaticon.com/icons/svg/2476/2476231.svg" class="btn btn-success" (click)="showAlertMessage()" style="width:30px; height:30px;">
+    </button>
+  </div>
