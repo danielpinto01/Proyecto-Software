@@ -1,27 +1,33 @@
-<!-- PAGINA DE INICIAR SESION USUARIO -->
 <div id="logInUser" [hidden]=hideLogInUserWindow>
-    <!-- Boton de volver a la pantalla de iniciar sesion general -->
-    <button id="backToLogInUA">
-      <img src="https://image.flaticon.com/icons/svg/1635/1635580.svg" class="btn btn-success" (click)="showLogInUA()" style="width:30px; height:30px;">
-    </button>
+  <!-- Boton de volver a la pantalla de iniciar sesion general -->
+  <a [routerLink] = "['/logIn']">
+    <button id="backToLogInUA"> <img src="https://image.flaticon.com/icons/svg/1635/1635580.svg" class="btn btn-success" style="width:30px; height:30px;"></button>
+  </a>
+
   <!-- Div con el icono en iniciar sesion usuario-->
   <div id="iconLogInUserDiv">
     <img src="https://image.flaticon.com/icons/svg/2485/2485910.svg" class="iconLogInUser" style="width:100px; height:100px;">
   </div>  
+
   <!-- Texto de iniciar sesion usuario -->
   <h1 id="iniciarSesionUser">Iniciar Sesión</h1>
+
   <!-- Texto de ingresar documento user -->
   <h1 id="ingresarDocumentoUser">Ingrese su documento</h1>
+
   <!-- Div de documento usuario -->
   <div id="documentUserDiv">
     <input type="text" class="form-control" id="inputDocumentUser" name="position" placeholder=" Ingrese su documento" style="width:200px; height:40px;">
   </div>
+
   <!-- Boton de olvide mi documento -->
   <button id="forgetMyDocumentButton" style="width:200px; height:40px;"><u>He olvidado mi documento</u> </button>
+
   <!-- Boton de inicio sesion usuario -->
   <button id="logInUserbutton" style="width:200px; height:40px;">Iniciar Sesion</button>
-   <!-- Boton de pregunta -->
-   <button id="questionSecundary">
+
+  <!-- Boton de pregunta -->
+  <button id="questionSecundary">
     <img src="https://image.flaticon.com/icons/svg/2476/2476231.svg" class="btn btn-success" (click)="showAlertMessage()" style="width:30px; height:30px;">
   </button>
 </div>

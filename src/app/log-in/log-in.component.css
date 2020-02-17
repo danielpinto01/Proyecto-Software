@@ -1,0 +1,66 @@
+/* Boton de retroceder a la secundaria*/
+#backToSecundary{
+	background-color: #ffffff;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	border: 0px;
+	border-radius: 20px;
+}
+#backToSecundary:hover{
+	background:#DEDEDE;
+} 
+
+/* Icono Log In Usuario Admin */
+.iconLogInUA {
+	top:615px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 70px;
+	width: 50%;
+}
+
+/* Texto de iniciar sesion */
+#iniciarSesionText{    
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	font-size:50px;
+	font-family: Arial;
+	margin-top: 80px;
+	margin-block-end: 50px;
+}
+
+/* Boton de usuario */
+#userButtonUA{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	background: #3189E3;
+	font-family: Arial;
+	color: #ffffff;
+	border-radius: 5px;
+	border: thin solid #3189E3;
+	margin-top: 100px;
+  }
+  #userButtonUA:hover{
+	  background:#2E6399;
+  }
+
+  /* Boton de administrador */
+#admiButtonUA{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	background: #3189E3;
+	font-family: Arial;
+	color: #ffffff;
+	border-radius: 5px;
+	border: thin solid #3189E3;
+	margin-top: 30px;
+  }
+  #admiButtonUA:hover{
+	  background:#2E6399;
+  }

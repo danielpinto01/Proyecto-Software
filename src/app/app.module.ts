@@ -5,18 +5,18 @@ import { FormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeAdministratorComponent } from './home-administrator/home-administrator.component';
-import { HomeClientComponent } from './home-client/home-client.component';
 import { InitComponent } from './init/init.component';
 import { InformationComponent } from './information/information.component';
+import { LogInComponent } from './log-in/log-in.component';
+import { LogInUserComponent } from './log-in-user/log-in-user.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeAdministratorComponent,
-    HomeClientComponent,
     InitComponent,
-    InformationComponent
+    InformationComponent,
+    LogInComponent,
+    LogInUserComponent
   ],
   imports: [
     BrowserModule,

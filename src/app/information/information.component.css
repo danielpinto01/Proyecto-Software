@@ -1,0 +1,77 @@
+/* PAGINA SECUNDARIA */
+
+/* Boton de retroceder */
+#backToHome{
+	background-color: #ffffff;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	border: 0px;
+	border-radius: 20px;
+}
+#backToHome:hover{
+	background:#DEDEDE;
+} 
+
+/* Icono secundario */
+.iconSecundary {
+	top:615px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	width: 50%;
+}
+
+/* Texto de bienvenido */
+#telecorp{    
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	font-size:50px;
+	font-family: Arial;
+	margin-top: 50px;
+	margin-block-end: 50px;
+}
+
+/* Boton de iniciar sesion */
+#iniciarSesion{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  background: #3189E3;
+  font-family: Arial;
+  color: #ffffff;
+  padding: 10px 50px;
+  border-radius: 5px;
+  border: thin solid #3189E3;
+}
+#iniciarSesion:hover{
+	background:#2E6399;
+}
+
+/* Parrafo */
+#text{    
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	font-size:15px;
+	font-family: Arial;
+	margin-top: 70px;
+	margin-block-end: 30px;
+	margin-left: 400px;
+	margin-right: 400px;
+}
+/* Boton de pregunta secundario */
+#questionSecundary{
+  background-color: #ffffff;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0px;
+  border-radius: 20px;
+}
+#questionSecundary:hover{
+  background:#DEDEDE;
+}

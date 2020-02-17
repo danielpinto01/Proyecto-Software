@@ -1,0 +1,26 @@
+<!-- PAGINA DE INICAR SESION U-A -->
+<div id="logInUADiv" [hidden]=hideLogInUAWindow>
+
+  <!-- Boton de volver a la pantalla secundaria -->
+  <a [routerLink]="['/information']">
+    <button id="backToSecundary">
+      <img src="https://image.flaticon.com/icons/svg/1635/1635580.svg" class="btn btn-success" style="width:30px; height:30px;">
+    </button>
+  </a>
+
+  <!-- Div con el icono log in usuario administrador-->
+  <div id="iconLogInUADiv">
+    <img src="https://image.flaticon.com/icons/svg/2485/2485910.svg" class="iconLogInUA" style="width:100px; height:100px;">
+  </div>
+
+  <!-- Texto de iniciar sesion -->
+  <h1 id="iniciarSesionText">Iniciar Sesión</h1>
+  
+  <!-- Boton de usuario -->
+  <a [routerLink] = "['/logInUser']">
+    <button id="userButtonUA"  style="width:200px; height:40px;" class="btn btn-success">Usuario</button>
+  </a>
+
+  <!-- Boton de administrador -->
+  <button id="admiButtonUA" style="width:200px; height:40px;">Administrador</button>
+</div>
