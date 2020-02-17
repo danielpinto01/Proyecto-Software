@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import { InformationComponent } from '../information/information.component';
 
 @Component({
@@ -12,21 +13,12 @@ export class InitComponent implements OnInit {
   hideSecondaryWindow: boolean = true;
 
   constructor() { 
-
   }
 
   ngOnInit() {
   }
 
-    // Ocultar la ventana principal
-  hideStar(): void {
-    // alert("Se ocultara");
-    this.hideStarWindow = true;
-    this.hideSecondaryWindow = false;
-  }
-
   showAlertMessage():void{
     alert("Aqui se muestra el mensaje");
   }
-
 }
