@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { InformationComponent } from '../information/information.component';
+import { InformationComponent } from './information/information.component';
 
 @Component({
   selector: 'app-init',
