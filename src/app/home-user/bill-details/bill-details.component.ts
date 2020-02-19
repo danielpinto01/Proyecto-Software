@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Bill } from 'src/app/models/Bill';
 import { BillDetail } from 'src/app/models/BillDetail';
 
@@ -8,9 +8,9 @@ import { BillDetail } from 'src/app/models/BillDetail';
   styleUrls: ['./bill-details.component.css']
 })
 export class BillDetailsComponent implements OnInit {
-  bill : Bill; 
-  constructor() { 
-    this.bill = new Bill('10522660', new Date(), new Date(), new Date(), new Date());
+  @Input() bill : Bill; 
+  constructor() {
+      console.log(this.bill); 
   }
 
   ngOnInit() {

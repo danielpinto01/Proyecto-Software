@@ -1,11 +1,14 @@
 <h1>Mi historial de facturas</h1>
-<div style="height: 200px; overflow-y: scroll;" >
+<div style="height: 200px; overflow-y: scroll;">
     <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" *ngFor="let bill of listBills">
-            <div class="d-flex w-100 justify-content-between">
-                <h5 class="mb-1">{{'Número de factura:' + bill.numBill}}</h5>
-                <small>{{bill.dateBill.toDateString()}}</small>
-            </div>
-        </a>
+        <div *ngFor="let bill of listBills">
+            <a (click)="sendBillChosen(bill)"
+                class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">{{'Número de factura:' + bill.numBill}}</h5>
+                    <small>{{bill.dateBill.toDateString()}}</small>
+                </div>
+            </a>
+        </div>
     </div>
 </div>

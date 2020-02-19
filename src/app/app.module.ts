@@ -12,7 +12,7 @@ import { HomeUserComponent } from './home-user/home-user.component';
 import { InfoUserComponent } from './home-user/info-user/info-user.component';
 import { ListBillsComponent } from './home-user/list-bills/list-bills.component';
 import { BillDetailsComponent } from './home-user/bill-details/bill-details.component';
-
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -30,7 +30,8 @@ import { BillDetailsComponent } from './home-user/bill-details/bill-details.comp
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

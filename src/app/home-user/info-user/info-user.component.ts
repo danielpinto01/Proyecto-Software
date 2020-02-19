@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Client } from 'src/app/models/client';
 
 @Component({
@@ -7,10 +7,9 @@ import { Client } from 'src/app/models/client';
   styleUrls: ['./info-user.component.css']
 })
 export class InfoUserComponent implements OnInit {
-  client: Client;
+  @Input() client: Client;
   
   constructor() {
-    this.client = new Client(1, 1053, 'Andres Flórez', 'Boyacá', 'Paipa', 'D28#13');
   }
 
   ngOnInit() {
