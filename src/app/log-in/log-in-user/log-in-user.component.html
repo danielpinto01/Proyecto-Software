@@ -1,7 +1,9 @@
 <div id="logInUser" [hidden]=hideLogInUserWindow>
   <!-- Boton de volver a la pantalla de iniciar sesion general -->
   <a [routerLink] = "['/logIn']">
-    <button id="backToLogInUA"> <img src="https://image.flaticon.com/icons/svg/1635/1635580.svg" class="btn" style="width:30px; height:30px;"></button>
+    <button id="backToLogInUA"> 
+      <img src="https://image.flaticon.com/icons/svg/1635/1635580.svg" style="width:30px; height:30px;">
+    </button>
   </a>
 
   <!-- Div con el icono en iniciar sesion usuario-->
@@ -27,7 +29,7 @@
   <button id="logInUserbutton" style="width:200px; height:40px;" [routerLink]="['/home']">Iniciar Sesion</button>
 
   <!-- Boton de pregunta -->
-  <button id="questionSecundary">
-    <img src="https://image.flaticon.com/icons/svg/2476/2476231.svg" class="btn btn-success" (click)="showAlertMessage()" style="width:30px; height:30px;">
+  <button id="question">
+    <img src="https://image.flaticon.com/icons/svg/2476/2476231.svg" (click)="showAlertMessage()" style="width:30px; height:30px;">
   </button>
 </div>

@@ -20,6 +20,4 @@ export class ListBillsComponent implements OnInit {
 
   ngOnInit() {
   }
-  
-
 }

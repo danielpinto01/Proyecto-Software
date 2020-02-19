@@ -1,3 +1,135 @@
-<div class="container-fluid div-bill">
-    <h1>Factura # 20</h1>
+<div id="billDetailsButtons" class="container-fluid div-bill">
+    <button id="showBill" class="btn btn-success" (click)="showBill()">Mostrar</button>
+</div>
+
+<div id="closeBillDiv" [hidden]=hideButtonCloseBill>
+    <button id="print" class="btn btn-success" (click)="savePrint('printDiv')">Imprimir</button>
+    <button id="buttonCloseBill" (click)="hideBill()">
+        <img src="../../../assets/images/close.png"  style="width:30px; height:30px;">
+  </button>
+</div>
+
+<div id="billDetailsDiv" class="container" [hidden]=hideBillDetails>
+        <div class="col-md-12 mb-4">
+            <div id="printDiv" class="card card-image" style="background-image: url(../../../assets/images/factura4.png) ; background-repeat: no-repeat; background-size: cover;">
+                <div class="row">
+                    <div class="col-md-4" style=" text-align: center;">
+                        <div id='InformationCientBill'>
+                            <h3>{{'Id: ' + bill.client.idClient}}</h3>
+                            <h3>{{'Documento: ' + bill.client.cedula}}</h3>
+                            <h3>{{'Nombre: ' + bill.client.nameClient}}</h3>
+                            <h3>{{'Departamento: ' + bill.client.department}}</h3>
+                            <h3>{{'Ciudad: ' + bill.client.city}}</h3>
+                            <h3>{{'Direccion: ' + bill.client.address}}</h3>
+                        </div>
+                        <br>
+                        <div id="divSusciption">
+                            <img src="../../../assets/images/tvNovelas.jpg"  style="width:80%; height:90%;"> 
+                            <!-- quemar lo de la suscripcion -->
+                            <h1 style="color: rgb(0, 0, 0); font-size:20px; "><b>Suscríbase a la revista TV novelas, este mes en exclusivo</b> </h1>
+                        </div>
+                      
+                    </div>
+                    <div class="col-md-8">
+                        <br><br><br>
+                        <div id='InformationDatesBill'>
+                            <table id="tableDates" class="table table-dark">    
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">Numero factura:</th>
+                                    <td>{{bill.numBill}}</td>
+                                  </tr>
+                                  <tr>
+                                      <th scope="row">Fecha factura:</th>
+                                      <td>{{bill.dateBill}}</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">Fecha oportuno:</th>
+                                    <td>{{bill.dateTimely}}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Inicio de periodo:</th>
+                                    <td>{{bill.initPeriod}}</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Fin de periodo:</th>
+                                    <td>{{bill.endPeriod}}</td>
+                                </tr>
+                                
+                                </tbody>
+                              </table>
+                        </div>
+                        <div id='InformationDetailsBill'>
+
+                            <div class="container">
+                                <div class="row">
+                                  <div class="col-md-2" style="background-color: tomato;">
+                                    <table>
+                                        <thead>
+                                            <th scope="col">TV:</th>
+                                        </thead>
+                                        <tbody>
+                                            <td>{{bill.details.valueTv}}</td>
+                                        </tbody>
+                                    </table>
+                                  </div>
+                                  <div class="col-md-2" style="background-color: rgb(53, 105, 184);">
+                                    <table>
+                                        <thead>
+                                            <th scope="col">'Internet:</th>
+                                        </thead>
+                                        <tbody>
+                                            <td>{{bill.details.valueInterner}}</td>
+                                        </tbody>
+                                    </table>
+                                  </div>
+                                  <div class="col-md-2" style="background-color: rgb(54, 165, 122);">
+                                    <table>
+                                        <thead>
+                                            <th scope="col">'Telefonia fija:</th>
+                                        </thead>
+                                        <tbody>
+                                            <td>{{bill.details.valueLandLina}}</td>
+                                        </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2" style="background-color: rgb(119, 108, 106);">
+                                      <table>
+                                          <thead>
+                                              <th scope="col">Movil:</th>
+                                          </thead>
+                                          <tbody>
+                                              <td>{{bill.details.valueMobile}}</td>
+                                          </tbody>
+                                      </table>
+                                    </div>
+                                    <div class="col-md-2" style="background-color: rgb(122, 35, 56);">
+                                      <table>
+                                          <thead>
+                                              <th scope="col">Larga distancia:</th>
+                                          </thead>
+                                          <tbody>
+                                              <td>{{bill.details.valueLongDistance}}</td>
+                                          </tbody>
+                                      </table>
+                                    </div>
+                                    <div class="col-md-2" style="background-color: rgb(206, 180, 34);">
+                                      <table>
+                                          <thead>
+                                              <th scope="col">'Revista:</th>
+                                          </thead>
+                                          <tbody>
+                                              <td>{{bill.details.valueMagazine}}</td>
+                                          </tbody>
+                                      </table>
+                                    </div>
+                                  </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 </div>

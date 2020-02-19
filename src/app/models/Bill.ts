@@ -1,7 +1,9 @@
 import { BillDetail } from './BillDetail';
+import { Client } from './client';
 
 export class Bill {
     public numBill: string;
+    public client: Client;
     public dateBill: Date;
     public dateTimely: Date;
     public initPeriod: Date;
@@ -15,6 +17,7 @@ export class Bill {
         this.initPeriod = initPeriod;
         this.endPeriod = endPeriod;
     }
+
 
     
 
