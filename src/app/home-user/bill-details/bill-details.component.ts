@@ -10,8 +10,16 @@ import { Account } from 'src/app/models/Account';
   styleUrls: ['./bill-details.component.css']
 })
 export class BillDetailsComponent implements OnInit {
-  @Input() bill: Bill;
-  @Input() account: Account;
+  @Input('bill') bill: Bill;
+  @Input('account') account: Account;
+  
+  constructor() {
+    
+  }
+
+  ngOnInit() {
+  }
+
   static showBill() {
     throw new Error("Method not implemented.");
   }
@@ -20,12 +28,6 @@ export class BillDetailsComponent implements OnInit {
   hideBillDetails: boolean = true;
   hideButtonCloseBill : boolean = true;
 
-  constructor() {
-    
-  }
-
-  ngOnInit() {
-  }
 
   savePrint(id): void {
     alert("Aqui se muestra el mensaje");

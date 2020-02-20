@@ -10,15 +10,13 @@
 </div>
 
 <div id="billDetailsDiv" class="container" [hidden]=hideBillDetails>
-    <h1>{{bill.numInvoice}}</h1>
-    <h2>{{account.client.nameClient}}</h2>
-    <!--div class="col-md-12 mb-4">
+    <div class="col-md-12 mb-4">
         <div id="printDiv" class="card card-image"
             style="background-image: url(../../../assets/images/factura4.png) ; background-repeat: no-repeat; background-size: cover;">
             <div class="row">
                 <div class="col-md-4" style=" text-align: center;">
                     <div id='InformationCientBill'>
-                        <h3>{{'Documento: ' + bill.client.cedula}}</h3>
+                        <h3>{{'Documento: ' + account.client.cedula}}</h3>
                         <h3>{{'Nombre: ' + account.client.nameClient}}</h3>
                         <h3>{{'Ubicación: ' + account.place.namePlace}}</h3>
                         <h3>{{'Direccion: ' + account.address}}</h3>
@@ -26,7 +24,7 @@
                     <br>
                     <div id="divSusciption">
                         <img src="../../../assets/images/tvNovelas.jpg" style="width:80%; height:90%;">
-                       
+
                         <h1 style="color: rgb(0, 0, 0); font-size:20px; "><b>Suscríbase a la revista TV novelas, este
                                 mes en exclusivo</b> </h1>
                     </div>
@@ -39,33 +37,48 @@
                             <tbody>
                                 <tr>
                                     <th scope="row">Numero factura:</th>
-                                    <td>{{bill.numBill}}</td>
+                                    <td>{{bill.numInvoice}}</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Fecha factura:</th>
-                                    <td>{{bill.dateBill}}</td>
+                                    <td>{{bill.saleDate}}</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Fecha oportuno:</th>
-                                    <td>{{bill.dateTimely}}</td>
+                                    <td>{{bill.limitPayDate}}</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Inicio de periodo:</th>
-                                    <td>{{bill.initPeriod}}</td>
+                                    <td>{{bill.initialDate}}</td>
                                 </tr>
                                 <tr>
                                     <th scope="row">Fin de periodo:</th>
-                                    <td>{{bill.endPeriod}}</td>
+                                    <td>{{bill.finishDate}}</td>
                                 </tr>
 
                             </tbody>
                         </table>
                     </div>
                     <div id='InformationDetailsBill'>
-
                         <div class="container">
                             <div class="row">
-                                <div *ngFor= "let product of bill.details">
+                                <div *ngFor="let detail of bill.details">
+                                    <div class="col-md-2" style="background-color: tomato;">
+                                        <table>
+                                            <thead>
+                                                <th scope="col">{{detail.product.nameProduct}}</th>
+                                            </thead>
+                                            <tbody>
+                                                <td>{{detail.product.valueProduct}}</td>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--div class="container">
+                            <div class="row">
+                                <div *ngFor="let product of bill.details">
                                     <div class="col-md-2" style="background-color: tomato;">
                                         <table>
                                             <thead>
@@ -128,12 +141,12 @@
                                             <td>{{bill.details.valueMagazine}}</td>
                                         </tbody>
                                     </table>
-                                </div-->
-<!--/div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div-->
+                                </div>
+                            </div>
+                        </div-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
