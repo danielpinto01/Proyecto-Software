@@ -1,5 +1,5 @@
 export class Place{
-    private idPlace: string; 
-    private namePlace : string;
-    private typePlace: string;
+    public idPlace: Number; 
+    public namePlace : string;
+    public typePlace: string;
 }

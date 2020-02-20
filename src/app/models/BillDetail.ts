@@ -1,8 +1,8 @@
+import { Product } from './Product';
+
 export class BillDetail {
-    public valueTv: Number;
-    public valueInterner: Number;
-    public valueLandLina: Number;
-    public valueMobile: Number;
-    public valueLongDistance: Number;
-    public valueMagazine: Number;
+    public idDetails: Number;
+    public quantity: Number;
+    public value: Number;
+    public product: Product;
 }

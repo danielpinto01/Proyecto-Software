@@ -5,8 +5,8 @@
             <a (click)="sendBillChosen(bill)"
                 class="list-group-item list-group-item-action flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">{{'Número de factura:' + bill.numBill}}</h5>
-                    <small>{{bill.dateBill.toDateString()}}</small>
+                    <h5 class="mb-1">{{'Número de factura:' + bill.numInvoice}}</h5>
+                    <small>{{bill.saleDate.toDateString()}}</small>
                 </div>
             </a>
         </div>

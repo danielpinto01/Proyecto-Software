@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Client } from '../models/client';
 import { Bill } from '../models/Bill';
+import { Account } from '../models/Account';
 
 @Component({
   selector: 'app-home-user',
@@ -8,8 +9,14 @@ import { Bill } from '../models/Bill';
   styleUrls: ['./home-user.component.css'],
 })
 export class HomeUserComponent implements OnInit {
-  clientLogged : Client = new Client(1, 1053, 'Andres Flórez'); 
-  actualBill: Bill = new Bill('15', new Date(), new Date(), new Date, new Date());
+  accountLogged : Account = { accountNumber: 10, address: "Diad", 
+        client: { cedula: "1053", idClient: 15, nameClient: "Andres", place: { idPlace: 8, namePlace: "Paipa", typePlace: "CIUDAD"}}, 
+        idAccount: 8, 
+        place:{ idPlace: 8, namePlace: "Paipa", typePlace: "CIUDAD"}};
+        
+
+  actualBill: Bill;  
+        
   constructor() { }
 
   ngOnInit() {
@@ -17,6 +24,7 @@ export class HomeUserComponent implements OnInit {
 
   receiveBillChosen(bill: Bill){
     console.log('Recibio factura ',  bill);
+    console.log('Cuenta', this.accountLogged);
     this.actualBill = bill;
   }
 }

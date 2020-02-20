@@ -48,19 +48,3 @@
   #userButtonUA:hover{
 	  background:#2E6399;
   }
-
-  /* Boton de administrador */
-#admiButtonUA{
-	display:block;
-	margin-left: auto;
-	margin-right: auto;
-	background: #3189E3;
-	font-family: Arial;
-	color: #ffffff;
-	border-radius: 5px;
-	border: thin solid #3189E3;
-	margin-top: 30px;
-  }
-  #admiButtonUA:hover{
-	  background:#2E6399;
-  }

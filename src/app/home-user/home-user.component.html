@@ -2,7 +2,7 @@
 <div class="container-fluid">
     <div class="row"> 
         <div class="col-md-2">
-            <app-info-user [client]="clientLogged"></app-info-user>
+            <app-info-user [account]="accountLogged"></app-info-user>
         </div>
         <div class="col-md-10">
             <app-list-bills (chooseBillEvent) = "receiveBillChosen($event)"></app-list-bills>
@@ -10,6 +10,6 @@
     </div>
     <br>
     <div class="row">
-        <app-bill-details [bill]= "actualBill"></app-bill-details>
+        <app-bill-details [account]="accountLogged"></app-bill-details>
     </div>
 </div>

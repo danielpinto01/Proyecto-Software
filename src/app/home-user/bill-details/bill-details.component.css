@@ -1,6 +1,54 @@
-.div-bill {
-    border-color: black;
+#billDetailsButtons {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
-    border: 1px solid;
-    border-radius: 2px;
+}
+
+#billDetailsDiv {
+    background-color: transparent;
+}
+
+#imageBackground {
+    opacity: 0.50;
+    filter: blur(2px);
+}
+
+#buttonCloseBill {
+    float: right;
+    background-color: #ffffff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0px;
+}
+#buttonCloseBill:hover {
+    background: #DEDEDE;
+}
+
+#informationBill {
+    top:520px;
+    float: left;
+}
+
+#InformationCientBill{
+    background:white;
+    opacity: 0.80;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 10%;
+}
+
+#InformationDatesBill{
+    color: black;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#InformationDetailsBill{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#tableDates {
+    background-color: white;
 }

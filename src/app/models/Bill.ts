@@ -1,21 +1,16 @@
 import { BillDetail } from './BillDetail';
+import { Client } from './client';
+import { Account } from './Account';
+import { AditionalCharges } from './AditionalCharges';
 
 export class Bill {
-    public numBill: string;
-    public dateBill: Date;
-    public dateTimely: Date;
-    public initPeriod: Date;
-    public endPeriod: Date;
-    public details: BillDetail;
-
-    constructor(numBill: string, dateBill: Date, dateTimely: Date, initPeriod: Date, endPeriod: Date) {
-        this.numBill = numBill;
-        this.dateBill = dateBill;
-        this.dateTimely = dateTimely;
-        this.initPeriod = initPeriod;
-        this.endPeriod = endPeriod;
-    }
-
-    
-
+    public idInvoice: Number;
+    public numInvoice: Number;
+    public saleDate: Date;
+    public limitPayDate: Date;
+    public initialDate: Date;
+    public finishDate: Date;
+    public details: BillDetail[];
+    public aditionalCharges: AditionalCharges[];
+    //public account : Account;
 }

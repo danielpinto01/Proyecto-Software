@@ -7,24 +7,34 @@ import { Bill } from 'src/app/models/Bill';
   styleUrls: ['./list-bills.component.css']
 })
 export class ListBillsComponent implements OnInit {
-  listBills : Bill[] = [];
-  @Output() chooseBillEvent = new EventEmitter<Bill>();  
-  constructor() { 
-    this.listBills.push(new Bill('10', new Date(), new Date(), new Date(), new Date()));
-    this.listBills.push(new Bill('11', new Date(), new Date(), new Date(), new Date()));
-    this.listBills.push(new Bill('12', new Date(), new Date(), new Date(), new Date()));
-    this.listBills.push(new Bill('13', new Date(), new Date(), new Date(), new Date()));
-    this.listBills.push(new Bill('14', new Date(), new Date(), new Date(), new Date()));
-    this.listBills.push(new Bill('15', new Date(), new Date(), new Date(), new Date()));
+  listBills: Bill[] = [];
+  @Output() chooseBillEvent = new EventEmitter<Bill>();
+  constructor() {
+    this.listBills.push({
+      idInvoice: 15, numInvoice: 15, saleDate: new Date(), limitPayDate: new Date(),
+      initialDate: new Date, finishDate: new Date(),
+      details: [{ idDetails: 1, quantity: 8, value: 8000, product: { idProduct: 1, nameProduct: "TV", valueProduct: 7000 } }],
+      aditionalCharges: [{ idAdditionalService: 5, nameService: "Reparo", valueService: 7000 }]
+    });
+    this.listBills.push({
+      idInvoice: 16, numInvoice: 25, saleDate: new Date(), limitPayDate: new Date(),
+      initialDate: new Date, finishDate: new Date(),
+      details: [{ idDetails: 5, quantity: 8, value: 8000, product: { idProduct: 1, nameProduct: "TV", valueProduct: 7000 } }],
+      aditionalCharges: [{ idAdditionalService: 5, nameService: "Reparo", valueService: 7000 }]
+    });
+    this.listBills.push({
+      idInvoice: 17, numInvoice: 35, saleDate: new Date(), limitPayDate: new Date(),
+      initialDate: new Date, finishDate: new Date(),
+      details: [{ idDetails: 4, quantity: 8, value: 8000, product: { idProduct: 1, nameProduct: "TV", valueProduct: 7000 } }],
+      aditionalCharges: [{ idAdditionalService: 5, nameService: "Reparo", valueService: 7000 }]
+    });
   }
 
   sendBillChosen(bill: Bill) {
-    console.log('Hola mundo ' + bill.numBill);
+    console.log('Hola mundo ' + bill.numInvoice);
     this.chooseBillEvent.emit(bill);
   }
 
   ngOnInit() {
   }
-  
-
 }
