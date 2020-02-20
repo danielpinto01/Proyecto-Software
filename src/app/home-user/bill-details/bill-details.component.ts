@@ -12,9 +12,11 @@ import { Account } from 'src/app/models/Account';
 export class BillDetailsComponent implements OnInit {
   @Input('bill') bill: Bill;
   @Input('account') account: Account;
-  
+
+  flag: boolean;
+
   constructor() {
-    
+    this.flag = false;
   }
 
   ngOnInit() {
@@ -42,11 +44,13 @@ export class BillDetailsComponent implements OnInit {
   }
 
   hideBill(): void{
+    
     this.hideBillDetails = true;
     this.hideButtonCloseBill = true;
   }
 
   showBill(): void{
+    this.flag = true;
     this.hideBillDetails = false;
     this.hideButtonCloseBill = false;
   }

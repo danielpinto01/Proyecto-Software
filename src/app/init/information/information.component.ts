@@ -12,4 +12,8 @@ export class InformationComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  showAlertMessage():void{
+    alert("Telecorp");
+  }
 }

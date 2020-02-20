@@ -1,11 +1,11 @@
-<h1>Mi historial de facturas</h1>
+<h1 id="titleBill">Mi historial de facturas</h1>
 <div style="height: 200px; overflow-y: scroll;">
     <div class="list-group">
         <div *ngFor="let bill of listBills">
             <a (click)="sendBillChosen(bill)"
                 class="list-group-item list-group-item-action flex-column align-items-start">
                 <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">{{'Número de factura:' + bill.numInvoice}}</h5>
+                    <h5 class="mb-1">{{'Número de factura: ' + bill.numInvoice}}</h5>
                     <small>{{bill.saleDate.toDateString()}}</small>
                 </div>
             </a>

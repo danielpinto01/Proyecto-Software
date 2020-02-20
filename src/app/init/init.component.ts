@@ -19,6 +19,6 @@ export class InitComponent implements OnInit {
   }
 
   showAlertMessage():void{
-    alert("Aqui se muestra el mensaje");
+    alert("Telecorp");
   }
 }
