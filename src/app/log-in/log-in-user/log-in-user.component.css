@@ -80,9 +80,6 @@
 	margin-top: 30px;
 	margin-block-end: 20px; 
   }
-  #logInUserbutton:hover{
-	background:blue;
-}
 
 /* Boton de pregunta */
 #question{

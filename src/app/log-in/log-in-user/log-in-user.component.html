@@ -17,16 +17,19 @@
   <!-- Texto de ingresar documento user -->
   <h1 id="ingresarDocumentoUser">Ingrese su documento</h1>
 
-  <!-- Div de documento usuario -->
-  <div id="documentUserDiv">
-    <input type="text" class="form-control" id="inputDocumentUser" name="position" placeholder=" Ingrese su documento" style="width:200px; height:40px;">
+<form #form="ngForm" (ngSubmit)="logIn()">
+   <!-- Div de documento usuario -->
+   <div id="documentUserDiv">
+    <input [(ngModel)]="id" type="text" class="form-control" id="inputDocumentUser" name="position" placeholder=" Ingrese su documento" style="width:200px; height:40px;">
   </div>
 
-  <!-- Boton de olvide mi documento -->
-  <button id="forgetMyDocumentButton" style="width:200px; height:40px;"><u>He olvidado mi documento</u> </button>
-
   <!-- Boton de inicio sesion usuario -->
-  <button id="logInUserbutton" style="width:200px; height:40px;" [routerLink]="['/home']">Iniciar Sesion</button>
+  <button id="logInUserbutton" style="width:200px; height:40px;" type="submit">Iniciar Sesion</button>
+  <!-- <button id="logInUserbutton" style="width:200px; height:40px;"[routerLink]="['/home']">Iniciar Sesion</button> -->
+</form>
+
+  <!-- Boton de olvide mi documento -->
+  <button id="forgetMyDocumentButton"  (click)="showAlertMessage()" style="width:200px; height:40px;"><u>He olvidado mi documento</u> </button>
 
   <!-- Boton de pregunta -->
   <button id="question">
